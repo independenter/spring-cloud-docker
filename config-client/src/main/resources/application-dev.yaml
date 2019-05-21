@@ -9,3 +9,14 @@ logging:
 spring:
   config:
     location: bootstrap.properties
+  application:
+    name: config-client
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${server.port}
+  client:
+    #register-with-eureka: false  #不要向注册中心注册自己
+    #fetch-registry: false  #禁止检索服务
+    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
