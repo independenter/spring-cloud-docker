@@ -11,6 +11,7 @@ server:
 
 eureka:
   instance:
+#    hostname: 172.17.0.1
     hostname: localhost
     instance-id: ${server.port}
   client:
