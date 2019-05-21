@@ -1,0 +1,26 @@
+server:
+  port: 9000
+#  servlet:
+#    context-path: /
+
+#spring.cloud.config.server.git.uri: https://github.com/forezp/SpringcloudConfig/
+#spring.cloud.config.server.git.searchPaths: respo
+#spring.cloud.config.label: master
+#spring.cloud.config.server.git.username:
+#spring.cloud.config.server.git.password:
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/independenter/spring-cloud-config/
+          search-paths: config
+#          username: independenter
+#          password: #####
