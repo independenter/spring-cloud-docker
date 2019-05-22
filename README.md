@@ -21,3 +21,5 @@ spring.cloud.config.profile
 dev开发环境配置文件
 test测试环境
 pro正式环境
+
+4.配置文件放到bootstrap.properties内，spring cloud client首先读取bootstrap的配置
