@@ -1,4 +1,4 @@
-package com.springcloud.servicehi;
+package com.springcloud.servicemiya;
 
 import brave.sampler.Sampler;
 import lombok.extern.slf4j.Slf4j;
@@ -10,13 +10,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@Slf4j
 @SpringBootApplication
 @RestController
-public class ServiceHiApplication {
+@Slf4j
+public class ServiceMiyaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceHiApplication.class, args);
+        SpringApplication.run(ServiceMiyaApplication.class, args);
+    }
+
+    @RequestMapping("/hi")
+    public String home(){
+        logger.info("hi is being called");
+        return "hi i'm miya!";
+    }
+
+    @RequestMapping("/miya")
+    public String info(){
+        logger.info("info is being called");
+        return restTemplate.getForObject("http://localhost:9011/info",String.class);
     }
 
     @Autowired
@@ -27,21 +39,9 @@ public class ServiceHiApplication {
         return new RestTemplate();
     }
 
-    @RequestMapping("/hi")
-    public String callHome(){
-        logger.info("calling trace service-hi  ");
-        return restTemplate.getForObject("http://localhost:9012/miya", String.class);
-    }
-    @RequestMapping("/info")
-    public String info(){
-        logger.info( "calling trace service-hi ");
-        return "i'm service-hi";
-
-    }
 
     @Bean
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
     }
-
 }

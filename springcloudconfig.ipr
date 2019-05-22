@@ -10,6 +10,7 @@
         <module name="config-server" />
         <module name="eureka-server" />
         <module name="service-hi" />
+        <module name="service-miya" />
         <module name="springcloudconfig" />
         <module name="zipkin-client" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="service-hi" target="1.8" />
+      <module name="service-miya" target="1.8" />
       <module name="springcloudconfig" target="1.8" />
       <module name="zipkin-client" target="1.8" />
     </bytecodeTargetLevel>
@@ -31,6 +33,7 @@
     <file url="file://$PROJECT_DIR$/service-hi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-hi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-hi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-miya" charset="UTF-8" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="InspectionProjectProfileManager">
@@ -46,6 +49,7 @@
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="service-hi" options="-parameters" />
+      <module name="service-miya" options="-parameters" />
       <module name="springcloudconfig" options="-parameters" />
       <module name="zipkin-client" options="-parameters" />
     </option>
@@ -58,6 +62,7 @@
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/service-hi/pom.xml" />
+        <option value="$PROJECT_DIR$/service-miya/pom.xml" />
       </list>
     </option>
   </component>
@@ -67,6 +72,7 @@
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-hi/service-hi.iml" filepath="$PROJECT_DIR$/service-hi/service-hi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-miya/service-miya.iml" filepath="$PROJECT_DIR$/service-miya/service-miya.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudconfig.iml" filepath="$PROJECT_DIR$/springcloudconfig.iml" />
     </modules>
   </component>
@@ -749,48 +755,169 @@
         <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: io.zipkin.reporter2:zipkin-reporter:2.5.0">
+    <library name="Maven: io.zipkin.brave:brave-context-log4j2:5.6.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.5.0/zipkin-reporter-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-context-log4j2/5.6.1/brave-context-log4j2-5.6.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.5.0/zipkin-reporter-2.5.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-context-log4j2/5.6.1/brave-context-log4j2-5.6.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.5.0/zipkin-reporter-2.5.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-context-log4j2/5.6.1/brave-context-log4j2-5.6.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: io.zipkin.reporter2:zipkin-sender-amqp-client:2.5.0">
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-http:5.6.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.5.0/zipkin-sender-amqp-client-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-http/5.6.1/brave-instrumentation-http-5.6.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.5.0/zipkin-sender-amqp-client-2.5.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-http/5.6.1/brave-instrumentation-http-5.6.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.5.0/zipkin-sender-amqp-client-2.5.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-http/5.6.1/brave-instrumentation-http-5.6.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: io.zipkin.reporter2:zipkin-sender-kafka11:2.5.0">
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-httpasyncclient:5.6.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.5.0/zipkin-sender-kafka11-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.6.1/brave-instrumentation-httpasyncclient-5.6.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.5.0/zipkin-sender-kafka11-2.5.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.6.1/brave-instrumentation-httpasyncclient-5.6.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.5.0/zipkin-sender-kafka11-2.5.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.6.1/brave-instrumentation-httpasyncclient-5.6.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: io.zipkin.zipkin2:zipkin:2.6.1">
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-httpclient:5.6.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.6.1/zipkin-2.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpclient/5.6.1/brave-instrumentation-httpclient-5.6.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.6.1/zipkin-2.6.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpclient/5.6.1/brave-instrumentation-httpclient-5.6.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.6.1/zipkin-2.6.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-httpclient/5.6.1/brave-instrumentation-httpclient-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-jms:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-jms/5.6.1/brave-instrumentation-jms-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-jms/5.6.1/brave-instrumentation-jms-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-jms/5.6.1/brave-instrumentation-jms-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-kafka-clients:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-kafka-clients/5.6.1/brave-instrumentation-kafka-clients-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-kafka-clients/5.6.1/brave-instrumentation-kafka-clients-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-kafka-clients/5.6.1/brave-instrumentation-kafka-clients-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-servlet:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-servlet/5.6.1/brave-instrumentation-servlet-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-servlet/5.6.1/brave-instrumentation-servlet-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-servlet/5.6.1/brave-instrumentation-servlet-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-spring-rabbit:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.6.1/brave-instrumentation-spring-rabbit-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.6.1/brave-instrumentation-spring-rabbit-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.6.1/brave-instrumentation-spring-rabbit-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-spring-web:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-web/5.6.1/brave-instrumentation-spring-web-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-web/5.6.1/brave-instrumentation-spring-web-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-web/5.6.1/brave-instrumentation-spring-web-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave-instrumentation-spring-webmvc:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-webmvc/5.6.1/brave-instrumentation-spring-webmvc-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-webmvc/5.6.1/brave-instrumentation-spring-webmvc-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave-instrumentation-spring-webmvc/5.6.1/brave-instrumentation-spring-webmvc-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.brave:brave:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave/5.6.1/brave-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave/5.6.1/brave-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave/5.6.1/brave-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.reporter2:zipkin-reporter:2.7.14">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.7.14/zipkin-reporter-2.7.14.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.7.14/zipkin-reporter-2.7.14-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-reporter/2.7.14/zipkin-reporter-2.7.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.reporter2:zipkin-sender-amqp-client:2.7.14">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.7.14/zipkin-sender-amqp-client-2.7.14.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.7.14/zipkin-sender-amqp-client-2.7.14-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-amqp-client/2.7.14/zipkin-sender-amqp-client-2.7.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.reporter2:zipkin-sender-kafka11:2.7.14">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.7.14/zipkin-sender-kafka11-2.7.14.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.7.14/zipkin-sender-kafka11-2.7.14-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter2/zipkin-sender-kafka11/2.7.14/zipkin-sender-kafka11-2.7.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.zipkin.zipkin2:zipkin:2.12.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.12.0/zipkin-2.12.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.12.0/zipkin-2.12.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/zipkin/zipkin2/zipkin/2.12.0/zipkin-2.12.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: javax.annotation:javax.annotation-api:1.3.2">
@@ -1057,17 +1184,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.bouncycastle:bcpkix-jdk15on:1.55">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.55/bcpkix-jdk15on-1.55.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.55/bcpkix-jdk15on-1.55-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.55/bcpkix-jdk15on-1.55-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.bouncycastle:bcpkix-jdk15on:1.60">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar!/" />
@@ -1077,17 +1193,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.bouncycastle:bcprov-jdk15on:1.55">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.bouncycastle:bcprov-jdk15on:1.60">
@@ -1552,17 +1657,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-bus/2.1.1.RELEASE/spring-cloud-bus-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-commons:1.3.3.RELEASE">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.3.3.RELEASE/spring-cloud-commons-1.3.3.RELEASE.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.3.3.RELEASE/spring-cloud-commons-1.3.3.RELEASE-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.3.3.RELEASE/spring-cloud-commons-1.3.3.RELEASE-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.1.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/2.1.1.RELEASE/spring-cloud-commons-2.1.1.RELEASE.jar!/" />
@@ -1594,17 +1688,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-config-server/2.1.1.RELEASE/spring-cloud-config-server-2.1.1.RELEASE-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-context:1.3.3.RELEASE">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.3.3.RELEASE/spring-cloud-context-1.3.3.RELEASE.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.3.3.RELEASE/spring-cloud-context-1.3.3.RELEASE-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.3.3.RELEASE/spring-cloud-context-1.3.3.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-context:2.1.1.RELEASE">
@@ -1695,26 +1778,26 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-ribbon/2.1.1.RELEASE/spring-cloud-netflix-ribbon-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-sleuth-core:1.3.3.RELEASE">
+    <library name="Maven: org.springframework.cloud:spring-cloud-sleuth-core:2.1.1.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.3.3.RELEASE/spring-cloud-sleuth-core-1.3.3.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/2.1.1.RELEASE/spring-cloud-sleuth-core-2.1.1.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.3.3.RELEASE/spring-cloud-sleuth-core-1.3.3.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/2.1.1.RELEASE/spring-cloud-sleuth-core-2.1.1.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.3.3.RELEASE/spring-cloud-sleuth-core-1.3.3.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/2.1.1.RELEASE/spring-cloud-sleuth-core-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-sleuth-zipkin:1.3.3.RELEASE">
+    <library name="Maven: org.springframework.cloud:spring-cloud-sleuth-zipkin:2.1.1.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.3.3.RELEASE/spring-cloud-sleuth-zipkin-1.3.3.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/2.1.1.RELEASE/spring-cloud-sleuth-zipkin-2.1.1.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.3.3.RELEASE/spring-cloud-sleuth-zipkin-1.3.3.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/2.1.1.RELEASE/spring-cloud-sleuth-zipkin-2.1.1.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.3.3.RELEASE/spring-cloud-sleuth-zipkin-1.3.3.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/2.1.1.RELEASE/spring-cloud-sleuth-zipkin-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter-bus-amqp:2.1.1.RELEASE">
@@ -1783,15 +1866,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.1.1.RELEASE/spring-cloud-starter-netflix-ribbon-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-starter-sleuth:1.3.3.RELEASE">
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-sleuth:2.1.1.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/1.3.3.RELEASE/spring-cloud-starter-sleuth-1.3.3.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/2.1.1.RELEASE/spring-cloud-starter-sleuth-2.1.1.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/1.3.3.RELEASE/spring-cloud-starter-sleuth-1.3.3.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/2.1.1.RELEASE/spring-cloud-starter-sleuth-2.1.1.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/1.3.3.RELEASE/spring-cloud-starter-sleuth-1.3.3.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-sleuth/2.1.1.RELEASE/spring-cloud-starter-sleuth-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter-stream-rabbit:2.1.2.RELEASE">
@@ -1805,26 +1888,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-stream-rabbit/2.1.2.RELEASE/spring-cloud-starter-stream-rabbit-2.1.2.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-starter-zipkin:1.3.3.RELEASE">
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-zipkin:2.1.1.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/1.3.3.RELEASE/spring-cloud-starter-zipkin-1.3.3.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/2.1.1.RELEASE/spring-cloud-starter-zipkin-2.1.1.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/1.3.3.RELEASE/spring-cloud-starter-zipkin-1.3.3.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/2.1.1.RELEASE/spring-cloud-starter-zipkin-2.1.1.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/1.3.3.RELEASE/spring-cloud-starter-zipkin-1.3.3.RELEASE-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.springframework.cloud:spring-cloud-starter:1.3.3.RELEASE">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter/1.3.3.RELEASE/spring-cloud-starter-1.3.3.RELEASE.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter/1.3.3.RELEASE/spring-cloud-starter-1.3.3.RELEASE-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter/1.3.3.RELEASE/spring-cloud-starter-1.3.3.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/2.1.1.RELEASE/spring-cloud-starter-zipkin-2.1.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.1.RELEASE">
@@ -1935,17 +2007,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.5.RELEASE/spring-security-crypto-5.1.5.RELEASE-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.springframework.security:spring-security-rsa:1.0.3.RELEASE">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-rsa/1.0.3.RELEASE/spring-security-rsa-1.0.3.RELEASE.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-rsa/1.0.3.RELEASE/spring-security-rsa-1.0.3.RELEASE-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-rsa/1.0.3.RELEASE/spring-security-rsa-1.0.3.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.security:spring-security-rsa:1.0.7.RELEASE">
