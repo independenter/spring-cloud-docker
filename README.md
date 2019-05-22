@@ -34,3 +34,13 @@ sr - Server Received -服务端获得请求并准备开始处理它，如果将�
 ss - Server Sent -注解表明请求处理的完成(当请求返回客户端)，如果ss减去sr时间戳便可得到服务端需要的处理请求时间
 cr - Client Received -表明span的结束，客户端成功接收到服务端的回复，如果cr减去cs时间戳便可得到客户端从服务端获取回复的所有所需时间
 将Span和Trace在一个系统中使用Zipkin注解的过程图形化：
+
+6.Finchley.RELEASE版本缺少brave的包，会导致zipkin的Sample找不到
+<brave.version>5.6.1</brave.version>
+<dependency>
+    <groupId>io.zipkin.brave</groupId>
+    <artifactId>brave-bom</artifactId>
+    <version>${brave.version}</version>
+    <type>pom</type>
+    <scope>import</scope>
+</dependency>
